@@ -5,3 +5,6 @@ Mobile applciation that communicates with the Digital Lock device through Google
     <img width="200px" src="./image1.png">
     <img width="200px" src="./image2.jpeg">
 </div>
+
+## Download
+You can download the latest version of the app through this [website](https://chave-digital-br.web.app/).
