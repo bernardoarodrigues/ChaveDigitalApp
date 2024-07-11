@@ -1,0 +1,161 @@
+<resources>
+    <!-- Strings -->
+
+    <!-- General -->
+    <string name="app_name">Chave Digital</string>
+    <string name="semConex">Sem conexão com WiFi</string>
+    <string name="avancar">Avançar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="ok">OK</string>
+    <string name="salvar">Salvar</string>
+    <string name="preench">O campo deve ser preenchido</string>
+    <string name="vc">Você</string>
+    <string name="insiraem">Insira seu email para trocar a senha</string>
+    <string name="resetDesc">Resetar a rede Wifi configurada na sua Chave Digital</string>
+
+    <!-- SignUp -->
+    <string name="cad_google">Cadastre com o Google</string>
+    <string name="insNm">Insira um nome válido</string>
+    <string name="nome">Nome</string>
+    <string name="emJaCad">Esse email já foi cadastrado</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="descCad">Cadastre com Google</string>
+    <string name="possui_cadastro1">Já possui cadastro? </string>
+    <string name="possui_cadastro2">Entrar</string>
+    <string name="cadFail">Cadastro falhou, tente novamente</string>
+
+    <!-- SignIn -->
+    <string name="entre_google">Entre com o Google</string>
+    <string name="insEm">Insira um email válido</string>
+    <string name="verifEm">Verifique seu email (e spam) antes de prosseguir</string>
+    <string name="envEm">Enviamos um email para alteração da senha</string>
+    <string name="insSen">Insira uma senha válida</string>
+    <string name="senhaInc">Senha incorreta</string>
+    <string name="esqueci_minha_senha">Esqueci minha senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="ouEnt">Ou</string>
+    <string name="descLog">Entre com Google</string>
+    <string name="nao_possui_cadastro1">Ainda não se cadastrou? </string>
+    <string name="nao_possui_cadastro2">Cadastrar</string>
+    <string name="web_client_id" translatable="false">231909290089-m3sroir5fqiofllggkomrn9mjf57ski5.apps.googleusercontent.com</string>
+    <string name="loginFail">Login falhou, tente novamente</string>
+
+    <!-- PreConfig -->
+    <string name="ligueCh">Ligue seu dispositivo e conecte-se à rede WiFi:</string>
+    <string name="quandoPronto">Quando estiver pronto avançe\npara configuração</string>
+
+    <!-- Config -->
+    <string name="confDisp">Configurar dispositivo</string>
+    <string name="selec">Selecione sua rede</string>
+    <string name="senha">Senha</string>
+    <string name="enviar">Enviar</string>
+    <string name="agCh">Aguarde enquanto configuramos seu dispositivo</string>
+    <string name="nenhRede">Nenhuma rede encontrada</string>
+    <string name="voltar">Voltar</string>
+    <string name="error">Erro</string>
+
+    <!-- PosConfig -->
+    <string name="termDisp">Dispositivo configurado</string>
+    <string name="pronto">Pronto!</string>
+    <string name="vocepronto">Agora você está pronto para usar sua Chave Digital</string>
+    <string name="vamosIn">Vamos para a página inicial?</string>
+
+    <!-- Home -->
+    <string name="aguarde">Aguarde…</string>
+    <string name="noCon">Sem conexão com a Internet,\nreconecte-se</string>
+    <string name="proc">Procurando dispositivos…</string>
+    <string name="nenhum">Nenhuma Chave Digital foi adicionada</string>
+    <string name="nenhumenc">Nenhuma Chave Digital foi encontrada na rede</string>
+    <string name="abrir">Abrir</string>
+    <string name="portAb">Portão aberto</string>
+    <string name="configs">Configurações</string>
+    <string name="addDisp">Adicionar dispositivo</string>
+    <string name="notConfig">O dispositivo não está configurado à internet</string>
+    <string name="askAdmin">Peça ao administrador para configurá-lo</string>
+    <string name="solicEnv">Solicitação enviada</string>
+    <string name="solicErr">Erro ao enviar solicitação</string>
+    <string name="solicJaEnv">Sua solicitação já foi enviada</string>
+    <string name="meuPort">Meu Portão</string>
+    <string name="conect">Conectando…</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="loadVideo">Carregando vídeo…</string>
+    <string name="japos_chave">Já possui uma Chave Digital configurada em sua rede?</string>
+    <string name="vcremov">Você foi removido do dispositivo</string>
+    <string name="dispOff">O dispositivo está offline</string>
+
+    <!-- AuthUser -->
+    <string name="agd">Aguarde</string>
+    <string name="solicWait">Aguarde enquanto enviamos a solicitação</string>
+    <string name="alrHave">Você já tem permissão para usar essa Chave Digital</string>
+    <string name="alrSentSolic">Você já enviou uma solicitação, aguarde o administrador</string>
+    <string name="solicSent">Sua solicitação foi enviada, aguarde até o administrador aceitá-la</string>
+    <string name="invLink">Link inválido</string>
+    <string name="alrHaveDev">Você já adicionou um dispositivo</string>
+    <string name="authUsers">Autorizados</string>
+    <string name="solicUsers">Solicitações</string>
+
+    <!-- Settings -->
+    <string name="dispositivo">Dispositivo</string>
+    <string name="users">Usuários</string>
+    <string name="descUsers">Controle quem usa seu dispositivo</string>
+    <string name="configswifi">Rede</string>
+    <string name="descWifi">Altere a rede do seu dispositivo</string>
+    <string name="video">Vídeo</string>
+    <string name="descCam">Adicione o vídeo de uma câmera</string>
+    <string name="addCamera">Insira o link da sua câmera\n\nModelo Yoosee:\nrtsp://ip:554/onvif1\nrtsp://usuário:senha@ip:554/onvif1\n</string>
+    <string name="link">Link</string>
+    <string name="seguranca">Segurança</string>
+    <string name="bloqueio">Bloqueio</string>
+    <string name="descBloq">Proteja o acesso ao botão do portão</string>
+    <string name="conta">Conta</string>
+    <string name="alterar">Alterar senha</string>
+    <string name="descAlt">Altere a senha da sua conta</string>
+    <string name="altFail">Alteração de senha falhou, tente novamente</string>
+    <string name="email">Email</string>
+    <string name="insSeuEm">Insira seu email</string>
+    <string name="containex">Conta inexistente</string>
+    <string name="sair">Sair</string>
+    <string name="descSair">Saia da sua conta</string>
+
+    <!-- Profile -->
+    <string name="perfil">Perfil</string>
+    <string name="descNome">Este nome será visto pelos outros usuários do aplicativo</string>
+    <string name="altNome">Alterar nome</string>
+    <string name="infoEdit">Altere seus dados pela conta do Google</string>
+    <string name="ftPerfil">Foto do perfil</string>
+    <string name="camera">Câmera</string>
+    <string name="galeria">Galeria</string>
+    <string name="deletar">Remover</string>
+    <string name="descEdit">Trocar Foto</string>
+
+    <!-- Users -->
+    <string name="addUser">Adicionar Usuário</string>
+    <string name="erroBd">Não foi possível obter os usuários</string>
+    <string name="admin">Admin</string>
+    <string name="userrm">Usuário removido</string>
+    <string name="nuserrm">Não foi possível remover o usuário</string>
+    <string name="temcert">Tem certeza?</string>
+    <string name="erroBdSolic">Não foi possível obter as solicitações</string>
+    <string name="nenhumSolic">Não há nenhuma solicitação</string>
+    <string name="nsolicrm">Não foi possível remover a solicitação</string>
+    <string name="solicrm">Solicitação removida</string>
+    <string name="nsolicac">Não foi possível aceitar a solicitação</string>
+    <string name="solicac">Solicitação aceita</string>
+    <string name="anySolic">Nenhuma solicitação encontrada</string>
+
+
+    <!-- Logout -->
+    <string name="sairCert">Tem certeza de que deseja sair?</string>
+
+    <!-- Widget -->
+    <string name="widget_desc">Abra seu portão rapidamente</string>
+    <string name="action_abrir">Abrir portão</string>
+
+    <!-- Biometry -->
+    <string name="bloqueado">Chave Digital Bloqueado</string>
+
+    <!-- BiometricPrompt -->
+    <string name="biometricTitle">Validar sua identidade</string>
+    <string name="biometricDesc">Confirme sua identidade para prosseguir</string>
+</resources>

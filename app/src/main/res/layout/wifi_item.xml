@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="71dp"
+    android:orientation="vertical">
+
+    <!-- Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- Wifi Icon -->
+        <ImageView
+            android:id="@+id/icWifi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Wifi Name -->
+        <TextView
+            android:id="@+id/nmWifi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/helvetica"
+            android:lines="1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="20dp"/>
+
+    </LinearLayout>
+
+    <!-- Wifi Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginVertical="1dp"
+        android:layout_height="1dp"
+        android:background="@color/lt_grey" />
+
+</LinearLayout>

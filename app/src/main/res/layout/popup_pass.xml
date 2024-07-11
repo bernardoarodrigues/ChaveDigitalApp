@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- NetworkPass Input Layout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/senhaLt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="@string/senha"
+        android:textColorHint="@color/dk_grey"
+        app:boxBackgroundColor="@color/white"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/lt_grey"
+        app:errorEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!-- NetworkPass Input Text -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/senhaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:fontFamily="@font/helvetica" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

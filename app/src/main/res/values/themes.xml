@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- App's theme -->
+    <style name="Theme.ChaveDigital" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary color -->
+        <item name="colorPrimary">@color/primary</item>
+        <!-- Secondary color -->
+        <item name="colorSecondary">@color/white</item>
+        <!-- StatusBar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+
+        <!-- Transitions -->
+        <item name="android:windowAnimationStyle">@style/CustomActivityAnimation</item>
+
+        <!-- RippleColor -->
+        <item name="rippleColor">@color/lt_grey</item>
+    </style>
+
+    <!-- Custom Transitions -->
+    <style name="CustomActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- Appbar Style -->
+    <style name="AppBar" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/helvetica</item>
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Tab Layout Style -->
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <!-- Dialog Style -->
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Negative</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/Alert.Button.Negative</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+    </style>
+
+    <!-- Dialog Neutral Button -->
+    <style name="Alert.Button.Neutral" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="rippleColor">@color/lt_grey</item>
+    </style>
+
+    <!-- Dialog Negative Button -->
+    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="rippleColor">@color/lt_grey</item>
+    </style>
+
+    <!-- Dialog Positive Button -->
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="rippleColor">@color/lt_grey</item>
+    </style>
+
+    <!-- ProgressDialog -->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/primary</item>
+    </style>
+
+    <!-- Widget -->
+    <style name="Theme.ChaveDigital.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <item name="appWidgetRadius">24dp</item>
+        <item name="appWidgetPadding">4dp</item>
+        <item name="appWidgetInnerRadius">4dp</item>
+    </style>
+    <style name="Theme.ChaveDigital.AppWidgetContainer" parent="Theme.ChaveDigital.AppWidgetContainerParent" />
+
+    <!-- BiometricPrompt Negative Button -->
+    <style name="ButtonPrimaryStyle" parent="">
+        <item name="android:letterSpacing">0</item>
+        <item name="rippleColor">@color/lt_grey</item>
+    </style>
+
+</resources>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.ChaveDigital.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Theme.ChaveDigital.AppWidgetContainer">
+
+    <!-- Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/primary"
+        android:gravity="center">
+
+        <!-- Button -->
+        <ImageView
+            android:id="@+id/widget_abrir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleY="1"
+            android:scaleX="1"
+            android:src="@drawable/btn_door"
+            android:contentDescription="@string/abrir"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</LinearLayout>

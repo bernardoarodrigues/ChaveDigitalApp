@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Home Menu Button -->
+    <item
+        android:id="@+id/configsBtn"
+        android:icon="@drawable/menu_icon"
+        android:title="@string/configs"
+        android:contentDescription="@string/configs"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".SignUp">
+
+    <!-- Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- App's Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/helvetica"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Google Button -->
+        <LinearLayout
+            android:id="@+id/cadGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/googlebutton_background"
+            android:elevation="4dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:paddingVertical="12dp">
+
+            <!-- Google Icon -->
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/google"
+                android:contentDescription="@string/descCad"
+                android:layout_marginEnd="15dp" />
+
+            <!-- Google Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cad_google"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:fontFamily="@font/helvetica"/>
+        </LinearLayout>
+
+        <!-- Or Divider -->
+        <LinearLayout
+            android:id="@+id/outroCad"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp">
+
+            <!-- Left line -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/button_border"
+                android:layout_marginVertical="20dp"/>
+
+            <!-- Or Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:text="@string/ouEnt"
+                android:textColor="#646464"
+                android:textSize="16sp"
+                android:fontFamily="@font/helvetica" />
+
+            <!-- Right line -->
+            <View
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:background="@drawable/button_border"
+                android:layout_marginVertical="20dp"/>
+
+        </LinearLayout>
+
+        <!-- Name Input Layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameSignupLt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/nome"
+            android:textColorHint="@color/dk_grey"
+            app:boxBackgroundColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <!-- Name Input Text -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameSignupTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:autofillHints="name"
+                android:fontFamily="@font/helvetica" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email Input Layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailSignupLt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/email"
+            android:textColorHint="@color/dk_grey"
+            app:boxBackgroundColor="@color/white"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <!-- Email Input Text -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailSignupTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:fontFamily="@font/helvetica" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password Input Layout -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passSignupLt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/senha"
+            android:textColorHint="@color/dk_grey"
+            app:boxBackgroundColor="@color/white"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/lt_grey"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <!-- Password Input Text -->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passSignupTxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:fontFamily="@font/helvetica" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- SignUp Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/cadastrar"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:letterSpacing="0"
+            android:fontFamily="@font/helvetica"
+            android:visibility="visible"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/primary"
+            android:paddingVertical="12dp"
+            app:cornerRadius="10dp"/>
+
+        <!-- Error Label -->
+        <TextView
+            android:id="@+id/errCad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:fontFamily="@font/helvetica"
+            android:visibility="gone"/>
+
+        <!-- Already Signed Labels -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <!-- Question Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/possui_cadastro1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/helvetica"/>
+
+            <!-- Redirect SignIn Button -->
+            <TextView
+                android:id="@+id/redLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/possui_cadastro2"
+                android:textColor="@color/primary"
+                android:textSize="14sp"
+                android:fontFamily="@font/helvetica"
+                android:layout_marginStart="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

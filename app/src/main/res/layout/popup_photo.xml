@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- EditButtons Layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Camera Button -->
+        <LinearLayout
+            android:id="@+id/btnCamEdit"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Camera FAB -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabCamEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:src="@drawable/camera_icon"
+                app:maxImageSize="20dp"
+                app:tint="@color/primary"
+                app:backgroundTint="@color/white"
+                android:visibility="visible"
+                android:contentDescription="@string/camera" />
+
+            <!-- Camera Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="@string/camera"
+                android:textColor="@color/dk_grey"
+                android:textSize="13sp"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+        <!-- Gallery Button -->
+        <LinearLayout
+            android:id="@+id/btnGalEdit"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="20dp">
+
+            <!-- Gallery FAB -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabGalEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:src="@drawable/gallery_icon"
+                app:maxImageSize="20dp"
+                app:tint="@color/primary"
+                app:backgroundTint="@color/white"
+                android:visibility="visible"
+                android:contentDescription="@string/galeria" />
+
+            <!-- Gallery Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="@string/galeria"
+                android:textColor="@color/dk_grey"
+                android:textSize="13sp"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+        <!-- Delete Button -->
+        <LinearLayout
+            android:id="@+id/btnDel"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Delete FAB -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:fabSize="mini"
+                app:borderWidth="0dp"
+                android:src="@drawable/delete_icon"
+                app:maxImageSize="20dp"
+                app:tint="@color/primary"
+                app:backgroundTint="@color/white"
+                android:visibility="visible"
+                android:contentDescription="@string/deletar" />
+
+            <!-- Delete Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text="@string/deletar"
+                android:textColor="@color/dk_grey"
+                android:textSize="13sp"
+                android:fontFamily="@font/helvetica" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
